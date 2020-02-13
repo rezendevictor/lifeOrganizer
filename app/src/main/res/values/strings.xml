@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LifeOrganizer</string>
+    <string name="total_disponivel">Total Disponivel</string>
+    <string name="adicionar_transa_o">Adicionar Transação</string>
+    <string name="routineLabel">Ｒｏｕｔｉｎｅ　（ァろフ）</string>
+    <string name="budgetLabel">ＢＵＤＧΞＴ　（内安沿）</string>
+    <string name="objectvLabel">♢ｂｊｅｃｔｉｖｅｓ　（ホりサ）</string>
+
+
+    <string-array name="categorias">
+        <item>NEEDS</item>
+        <item>SAVINGS</item>
+        <item>WANTS</item>
+    </string-array>
+
+
+</resources>
