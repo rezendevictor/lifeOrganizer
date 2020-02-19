@@ -8,9 +8,9 @@
 
 
     <string-array name="categorias">
-        <item>NEEDS</item>
-        <item>SAVINGS</item>
-        <item>WANTS</item>
+        <item>"NEEDS"</item>
+        <item>"SAVINGS"</item>
+        <item>"WANTS"</item>
     </string-array>
 
 

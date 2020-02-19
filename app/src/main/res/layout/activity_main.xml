@@ -21,10 +21,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/objectivesBtn"
+        android:id="@+id/saldoBtn"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:text="@string/objectvLabel"
+        android:text="Saldo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,17 +39,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/objectivesBtn"
+        app:layout_constraintTop_toBottomOf="@+id/saldoBtn"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="414dp"
-        android:layout_height="343dp"
+        android:layout_width="340dp"
+        android:layout_height="317dp"
         app:layout_constraintBottom_toTopOf="@+id/budget"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:srcCompat="@drawable/inicialicon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

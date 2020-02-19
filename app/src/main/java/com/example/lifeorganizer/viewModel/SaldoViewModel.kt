@@ -16,9 +16,6 @@ class SaldoViewModel : ViewModel() {
         savings.set(0.0F.toString())
 
 
-
-
-
     }
 
 

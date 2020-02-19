@@ -6,6 +6,7 @@
     tools:context=".BudgetActivity">
 
     <data>
+
         <variable
             name="budget"
             type="com.example.lifeorganizer.viewModel.BudgetViewModel" />
@@ -22,48 +23,29 @@
             android:layout_width="167dp"
             android:layout_height="43dp"
             android:layout_marginStart="52dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="68dp"
             android:gravity="center"
             android:text="Categoria"
             android:textAppearance="@android:style/TextAppearance.Large"
 
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/btn_saldo"
+
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/catSelect"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
+
+
             app:layout_constraintTop_toBottomOf="@+id/addTran"
-            app:layout_constraintVertical_bias="0.196"
-
-
-            />
-
-        <Button
-            android:id="@+id/btn_saldo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SALDO"
-            app:layout_constraintBottom_toTopOf="@+id/button6"
-            tools:layout_editor_absoluteX="0dp"
-
-            />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="96dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintVertical_bias="0.004" />
 
         <TextView
             android:id="@+id/addTran"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="140dp"
             android:gravity="center"
             android:text="@string/adicionar_transa_o"
 
@@ -76,45 +58,44 @@
             android:id="@+id/valor"
             android:layout_width="171dp"
             android:layout_height="40dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="140dp"
             android:ems="10"
-            android:text="@{budget.valor}"
             android:hint="Valor"
             android:inputType="number"
+            android:text="@={budget.valor}"
+            app:layout_constraintBottom_toTopOf="@+id/addBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/addTran"
-            app:layout_constraintTop_toTopOf="parent"
 
-            />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/addBtn"
             android:layout_width="126dp"
             android:layout_height="56dp"
-            android:layout_marginBottom="124dp"
+            android:layout_marginBottom="336dp"
             android:onClick="@{()-> budget.addMoney()}"
-            android:text="Adicionar"
-            app:layout_constraintBottom_toTopOf="@+id/btn_saldo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.814"
-            app:layout_constraintStart_toStartOf="parent"
 
-            />
+            android:text="Adicionar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.835"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Spinner
             android:id="@+id/catSelect"
             android:layout_width="189dp"
             android:layout_height="36dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="44dp"
             android:spinnerMode="dropdown"
             app:layout_constraintBottom_toTopOf="@+id/addBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/valor"
-
-
-            app:layout_constraintVertical_bias="0.78" />
+            app:layout_constraintVertical_bias="0.789" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
